@@ -55,6 +55,7 @@
         align-items: center;
         justify-content: space-between;
         width: 100%;
+        max-width: 50rem;
         margin-bottom: 6rem;
     }
 
@@ -105,6 +106,7 @@
         .logos {
             order: 1;
             justify-content: flex-start;
+            max-width: initial;
             margin-top: 8rem;
             margin-bottom: 0;
         }
