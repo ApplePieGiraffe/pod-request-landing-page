@@ -5,7 +5,9 @@
 	import Attribution from './components/Attribution.svelte';
 </script>
 
-<LoadingScreen/>
+{#if window.innerWidth >= 800}
+	<LoadingScreen/>
+{/if}
 
 <div class="container">
 	<img src="/assets/img/logo.svg" alt="Pod logo">
