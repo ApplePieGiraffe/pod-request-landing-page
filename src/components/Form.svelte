@@ -9,25 +9,26 @@
 
 <style>
     form {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: 6rem 6rem;
+        grid-row-gap: 2rem;
         width: 100%;
-        max-width: 53.5rem;
+        max-width: 50rem;
+    }
+
+    input,
+    button {
+        border: none;
         border-radius: 10rem;
-        background-color: var(--color-greyish-blue);
-        padding: 5px;
+        font-family: inherit;
+        line-height: inherit;
     }
 
     input {
-        flex: 1;
-        width: 100%;
-        border: none;
-        border-radius: 10rem;
         padding-left: 4rem;
         background-color: var(--color-greyish-blue);
         color: var(--color-white);
-        font-family: inherit;
-        line-height: inherit;
+
     }
 
     input::placeholder {
@@ -38,14 +39,10 @@
     }
 
     button {
-        border: none;
-        border-radius: 10rem;
         padding: 1rem 3.5rem;
         background-color: var(--color-pale-green);
         color: var(--color-very-dark-blue);
-        font-family: inherit;
         font-size: 1.75rem;
-        line-height: inherit;
         cursor: pointer;
         transition: background-color .3s;
     }
@@ -55,12 +52,20 @@
     }
 
     @media only screen and (min-width: 600px) {
-         form {
-             flex-direction: row;
-         }
+        form {
+            grid-template-columns: 1fr max-content;
+            grid-template-rows: 7rem;
+        }
 
-         input {
-             width: initial;
-         }
+        input {
+            grid-column: 1 / -1;
+            grid-row: 1 / -1;
+        }
+
+        button {
+            grid-column: 2 / -1;
+            grid-row: 1 / -1;
+            margin: 5px;
+        }
     }
 </style>
