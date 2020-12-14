@@ -1,8 +1,11 @@
 <script>
 	// components
+	import LoadingScreen from './components/LoadingScreen.svelte';
 	import TextContent from './components/TextContent.svelte';
 	import Attribution from './components/Attribution.svelte';
 </script>
+
+<LoadingScreen/>
 
 <div class="container">
 	<img src="/assets/img/logo.svg" alt="Pod logo">
@@ -12,6 +15,7 @@
 
 <style>
 	:global(body) {
+		overflow: hidden;
 		min-height: 100vh;
 		background-color: var(--color-very-dark-blue);
 	}
