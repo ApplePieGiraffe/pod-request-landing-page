@@ -1,5 +1,5 @@
 <script>
-    
+
 </script>
 
 <form>
@@ -13,7 +13,7 @@
         grid-template-rows: 6rem 6rem;
         grid-row-gap: 2rem;
         width: 100%;
-        max-width: 50rem;
+        max-width: 53.375rem;
     }
 
     input,
@@ -21,19 +21,20 @@
         border: none;
         border-radius: 10rem;
         font-family: inherit;
+        font-weight: 700;
         line-height: inherit;
     }
 
     input {
         padding-left: 4rem;
-        background-color: var(--color-greyish-blue);
+        background-color: var(--color-dark-greyish-blue);
         color: var(--color-white);
-
     }
 
     input::placeholder {
         color: var(--color-white);
         font-family: inherit;
+        letter-spacing: .25px;
         line-height: inherit;
         opacity: .5;
     }
