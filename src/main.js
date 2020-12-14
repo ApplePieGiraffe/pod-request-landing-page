@@ -6,6 +6,12 @@ const app = new App({
 
 export default app;
 
+// reset page scroll...
+
+window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+}
+
 // GSAP
 
 let timeline = gsap.timeline({ defaults: { ease: 'power1.out' } });
@@ -18,4 +24,4 @@ timeline.to('.intro-heading', { opacity: '0', duration: 1 }, '-=1');
 timeline.to('.divider', { height: '0', duration: 0.5 });
 timeline.to('.loading-screen', { opacity: '0', duration: 0.5, delay: 0.25 });
 timeline.to('.loading-screen', { display: 'none' });
-timeline.to('body', { overflow: 'visible' }, '-=1');
+timeline.to('body', { overflow: 'visible' });

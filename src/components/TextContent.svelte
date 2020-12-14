@@ -141,23 +141,5 @@
             font-size: 6.5rem;
             line-height: 7.75rem;
         }
-
-        /* logos */
-
-        .logos img {
-            width: initial;
-        }
-
-        img:nth-child(1) {
-            margin-right: 5rem;
-        }
-
-        img:nth-child(2) {
-            margin-right: 5rem;
-        }
-
-        img:nth-child(3) {
-            margin-right: 3.375rem;
-        }
     }
 </style>

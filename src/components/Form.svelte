@@ -34,8 +34,9 @@
     input::placeholder {
         color: var(--color-white);
         font-family: inherit;
+        font-size: 1.75rem;
         letter-spacing: .25px;
-        line-height: inherit;
+        /* line-height: inherit; */
         opacity: .5;
     }
 
@@ -51,6 +52,8 @@
     button:hover {
         background-color: #B3FFE2;
     }
+
+    /* media query */
 
     @media only screen and (min-width: 600px) {
         form {
