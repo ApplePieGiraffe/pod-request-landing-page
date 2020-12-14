@@ -1,0 +1,31 @@
+:root {
+	--color-pale-green: #54e6af;
+	--color-dark-greyish-blue: #2c344b;
+	--color-very-dark-blue: #121725;
+	--color-white: #ffffff;
+	--color-greyish-blue: #5a668a;
+	--color-light-greyish-blue: #c2cbe5;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 50%;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Chivo', sans-serif;
+	font-size: 2.25rem;
+	line-height: 3.5rem;
+}
+
+*:focus {
+	outline: 2px dotted var(--color-pale-green);
+}
