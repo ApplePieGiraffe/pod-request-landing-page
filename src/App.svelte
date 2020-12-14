@@ -1,11 +1,13 @@
 <script>
 	// components
 	import TextContent from './components/TextContent.svelte';
+	import Attribution from './components/Attribution.svelte';
 </script>
 
 <div class="container">
 	<img src="/assets/img/logo.svg" alt="Pod logo">
 	<TextContent/>
+	<Attribution/>
 </div>
 
 <style>
